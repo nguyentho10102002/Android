@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoTaDoiBongPsgActivity"
+    android:background="@drawable/background_may">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgMoTa"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/psg"
+                    android:background="@drawable/boder"/>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtMoTaTenDoiBong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paris Saint Germain"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtMoTaSanVanDong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sân vận động Công viên các Hoàng tử"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/teal_700"/>
+                <TextView
+                    android:id="@+id/txtHuanLuyenVien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Huấn luyện viên Christophe Galtier"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgDoiBong"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô Tả"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtMoTa"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Câu lạc bộ bóng đá Paris Saint-Germain (thường được gọi là Paris Saint-Germain, Paris SG hoặc đơn giản là PSG) là một câu lạc bộ bóng đá chuyên nghiệp có trụ sở tại Paris, Pháp. Tiền thân là câu lạc bộ đa thể thao Stade Saint-Germain, Paris Saint-Germain chính thức được thành lập năm 1970 và hiện đang thi đấu tại Ligue 1.Tại hạng đấu cao nhất của bóng đá Pháp, Paris Saint-Germain có 10 lần giành chức vô địch của giải đấu. Câu lạc bộ cũng có 9 lần giữ vị trí á quân, trong đó có mùa bóng 1992–1993, Paris Saint-Germain từ chối chức vô địch sau khi Olympique de Marseille bị tước danh hiệu vì scandal. Với các giải đá cúp, câu lạc bộ có rất nhiều thành tích với 14 lần giành Cúp bóng đá Pháp, 9 lần giành Cúp Liên đoàn bóng đá Pháp và 10 lần Siêu cúp bóng đá Pháp. Trên đấu trường châu Âu, thành tích lớn nhất mà Paris Saint-Germain đạt được là danh hiệu UEFA Cup Winners' Cup vào năm 1996 và 1 lần về nhì ở UEFA Champions League. Trang phục thi đấu của Paris Saint-Germain mang hai màu xanh, đỏ chủ đạo, cũng chính là màu cờ của thành phố Paris. Sân nhà của câu lạc bộ hiện tại là Sân vận động Công viên các Hoàng tử, nằm tại Quận 16, kế bên rừng Boulogne, có sức chứa 47.929 chỗ ngồi."
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</ScrollView>

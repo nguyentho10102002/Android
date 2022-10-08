@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chitiet">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgMoTa"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/liver"
+                    android:background="@drawable/boder"/>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtMoTaTenGame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liverpool"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txt_mo_ta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sân vận động Anfield"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/teal_700"/>
+                <TextView
+                    android:id="@+id/txt_dung_luong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Huấn luyện viên Jürgen Klopp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <VideoView
+                android:id="@+id/vdAnhViDeo"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"/>
+            <ImageButton
+                android:id="@+id/imgmp4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/play"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô Tả"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtMoTaGame"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Câu lạc bộ bóng đá Liverpool (tiếng Anh: Liverpool Football Club) là một câu lạc bộ bóng đá chuyên nghiệp có trụ sở tại Liverpool, Anh, hiện đang thi đấu ở Premier League, giải đấu hàng đầu của hệ thống bóng đá Anh. Ở trong nước, câu lạc bộ đã giành được 19 chức vô địch Ngoại hạng Anh, 8 FA Cup, kỷ lục 9 League Cup và 16 FA Community Shield. Trong các giải đấu quốc tế, câu lạc bộ đã giành được sáu Cúp C1 Châu Âu, nhiều hơn bất kỳ một câu lạc bộ Anh nào khác, ba Cúp UEFA, bốn Siêu cúp UEFA và một FIFA Club World Cup.
+
+Liverpool được thành lập vào ngày 3 tháng 6 năm 1892 bởi John Houlding và lên chơi tại giải cấp quốc gia trong năm kế tiếp. Đội đã sử dụng sân nhà Anfield từ khi thành lập cho đến nay. Đội thi đấu rất thành công trong thập niên 70 và 80, dưới thời các huấn luyện viên Bill Shankly và Bob Paisley, họ đã giành được 11 chức vô địch quốc gia cùng 7 danh hiệu châu Âu."
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/drawable-v24/border_avatar.xml" value="0.2195" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/drawable-v24/ic_baseline_lock_24.xml" value="0.2195" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.2195" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2195" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_chitiet.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_main2.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_main_dang_ky.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_mo_ta_doi_bong_bayen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_mo_ta_doi_bong_chealse.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_mo_ta_doi_bong_fcb.xml" value="0.24583333333333332" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_mo_ta_doi_bong_juventus.xml" value="0.24583333333333332" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_mo_ta_doi_bong_liver.xml" value="0.22871376811594202" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_mo_ta_doi_bong_mc.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_mo_ta_doi_bong_mu.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_mo_ta_doi_bong_psg.xml" value="0.10457516339869281" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_mo_ta_doi_bong_real.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_mo_ta_doi_bongpsg.xml" value="0.22871376811594202" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_motadoibong3.xml" value="0.24583333333333332" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_profile_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/activity_trang_chu_fragment.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/dong_doi_bong.xml" value="0.14945652173913043" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/dong_dong_vat.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/ic_baseline_home_24.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/layout/ic_baseline_person_24.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/TechCare/Desktop/BT_GiuaKy/app/src/main/res/menu/menu_bottom_nav.xml" value="0.25" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/drawable-v24/custom_signin_signup.xml" value="0.1785" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/drawable-v24/custom_signinbtn.xml" value="0.1785" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/drawable-v24/gradient.xml" value="0.1785" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/drawable-v24/gradient_follow.xml" value="0.1785" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/drawable-v24/ic_baseline_arrow_back_ios_24.xml" value="0.198" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/drawable-v24/ic_baseline_lock_24.xml" value="0.1785" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/drawable-v24/ic_baseline_person_24.xml" value="0.1785" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/drawable/custom_color_bottom_nav.xml" value="0.1785" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.1785" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1785" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/layout/activity_chitiet.xml" value="0.25416666666666665" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/layout/activity_main2.xml" value="0.22826086956521738" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/layout/activity_main_dang_ky.xml" value="0.22826086956521738" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/layout/activity_profile_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/layout/activity_trang_chu_fragment.xml" value="0.1" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/layout/dong_dong_vat.xml" value="0.264" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/layout/dong_truyen.xml" value="0.2" />
+        <entry key="..\:/mobile/Mobile/BT_GiuaKy/app/src/main/res/menu/menu_bottom_nav.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.10457516339869281" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
