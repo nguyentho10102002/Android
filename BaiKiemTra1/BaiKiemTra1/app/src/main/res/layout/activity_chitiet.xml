@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chitiet">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgMoTa"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hongocha"
+                    android:background="@drawable/boder"/>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtMoTaCaSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hồ Ngọc Hà"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txt_nghe_danh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ hoàng giới giải trí"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/teal_700"/>
+                <TextView
+                    android:id="@+id/txt_sao_binh_chon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 Sao"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <VideoView
+                android:id="@+id/vdAnhViDeo"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"/>
+            <ImageButton
+                android:id="@+id/imgmp4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/play"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô Tả"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtMoTa_ca_si"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hồ Ngọc Hà thuộc số ít những ngôi sao thường xuyên có dịp gặp gỡ các ca sĩ danh tiếng quốc tế. Thay vì bị lép vế khi chạm trán sao quốc tế, nữ ca sĩ luôn gây ấn tượng mạnh mẽ với vẻ ngoài rạng rỡ, thần thái cuốn hút luôn khiến không chỉ fan Việt mà khán giả nước ngoài cũng phải trầm trồ."
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</ScrollView>
