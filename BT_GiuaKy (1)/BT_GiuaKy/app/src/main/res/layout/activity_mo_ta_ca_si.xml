@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_Mo_ta_ca"
+    android:background="@drawable/background_may">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                app:cardCornerRadius="12dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgMoTa"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mytam"
+                    android:background="@drawable/boder"/>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtMoTaTenCaSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phan Thị Mỹ Tâm"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txtNgheDanh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ hoàng của Vpop"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:textColor="@color/teal_700"/>
+                <TextView
+                    android:id="@+id/txtSao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Viet Nam"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/imgSao"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/anhsao"
+                    android:background="@drawable/boder"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgCaSi"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô Tả"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtMoTa"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cô từng xuất hiện trên trang bìa tạp chí Match Du Monde của nước Pháp cùng bài báo Mỹ Tâm – Thế hệ Rock n’ Roll Việt Nam Được trang ABC News (Mỹ) bình chọn là 1 trong 12 Hiện tượng Pop toàn cầu mà bạn chưa biết. Ngay cả fanpage của giải thưởng âm nhạc uy tín thế giới World Music Awards cũng hết lời khen ngợi khi thực hiện liveshow HeartBeat.. Thậm chí, tờ Sports DongA đã dành hẳn một bài viết dài với ta đề Album của Mỹ Tâm và nhà sản xuất âm nhạc Cho Sung Jin lập kỷ lục lọt top 10 Billboard."
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</ScrollView>
