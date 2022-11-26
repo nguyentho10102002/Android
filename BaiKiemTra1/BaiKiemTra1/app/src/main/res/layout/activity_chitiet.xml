@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".chitiet">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="match_parent">
@@ -57,6 +57,13 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/anhsao"
+                    android:background="@drawable/boder"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -64,19 +71,20 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <VideoView
                 android:id="@+id/vdAnhViDeo"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop" />
+
             <ImageButton
                 android:id="@+id/imgmp4"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/play"
+                android:layout_width="77dp"
+                android:layout_height="84dp"
+                android:layout_centerInParent="true"
                 android:background="@null"
-                android:scaleType="centerCrop"
-                android:layout_centerInParent="true" />
+                android:scaleType="centerCrop" />
         </RelativeLayout>
         <TextView
             android:padding="10dp"
