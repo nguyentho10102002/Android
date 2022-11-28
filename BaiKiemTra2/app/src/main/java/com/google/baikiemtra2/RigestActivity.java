@@ -1,15 +1,13 @@
 package com.google.baikiemtra2;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -19,53 +17,47 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class RigestActivity extends AppCompatActivity {
 
-    private EditText emailedit, passedit;
-    private Button btnlogup  ;
-    private FirebaseAuth mAuth;
     @Override
-    protected void onCreate(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rigest);
-        mAuth = FirebaseAuth.getInstance();
 
-        emailedit = findViewById(R.id.EmailInput);
-        passedit = findViewById(R.id.PasswordInput);
-        btnlogup = findViewById(R.id.logup);
-        
-
-        btnlogup.setOnClickListener(new View.OnClickListener() {
+        TextView textView = (TextView) findViewById(R.id.gotoSignIn);
+        Button button = (Button) findViewById(R.id.btnSignUp);
+        textView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                logup();
+            public void onClick(View view) {
+                Intent intent = new Intent(RigestActivity.this, SingInActivity.class);
+                startActivity(intent);
             }
         });
-        
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                signup();
+            }
+        });
     }
-
-    private void logup() {
-        String email , pass ;
-        email =  emailedit.getText().toString();
-        pass  = passedit.getText().toString();
-
-        if(TextUtils.isEmpty(email)){
-            Toast.makeText(this,"Vui lòng nhập email!!!",Toast.LENGTH_SHORT).show();
-            return;
+    private void   signup() {
+        String taiKhoan, pass;
+        TextView textView1 = (TextView) findViewById(R.id.edtEmail);
+        TextView textView2 = (TextView) findViewById(R.id.edtPassword);
+        TextView textView3 = (TextView) findViewById(R.id.edtConfirmPassword);
+        taiKhoan = textView1.getText().toString();
+        pass = textView2.getText().toString();
+        if (textView1.getText() == "" || textView2.getText() == "" || textView3.getText().equals("")){
+            Toast.makeText( RigestActivity.this,"Tài khoản hoặc mật khẩu không được để trống" , Toast.LENGTH_SHORT).show();
         }
-        if(TextUtils.isEmpty(pass)){
-            Toast.makeText(this,"Vui lòng nhập password!!!",Toast.LENGTH_SHORT).show();
-            return;
-        }
-        mAuth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        FirebaseAuth authException = FirebaseAuth.getInstance();
+        authException.createUserWithEmailAndPassword(taiKhoan, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    Toast.makeText(getApplicationContext(),"Tạo tài khoản thành công!!!",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(RigestActivity.this , MainActivity.class );
+                if (task.isSuccessful()) {
+                    Toast.makeText(getApplicationContext(), "Đăng Kí thành công", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(RigestActivity.this, SingInActivity.class);
                     startActivity(intent);
-
-                }else {
-                    Toast.makeText(getApplicationContext(),"Tạo tài khoản  không thành công!!!",Toast.LENGTH_SHORT).show();
-
+                } else {
+                    Toast.makeText(RigestActivity.this, "Đăng kí thất bại", Toast.LENGTH_SHORT).show();
                 }
             }
         });

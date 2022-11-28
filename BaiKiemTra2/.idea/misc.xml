@@ -3,22 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/BaiKiemTra2/app/src/main/res/drawable-mdpi/ic_baseline_lock_open_24.xml" value="0.171" />
+        <entry key="..\:/BaiKiemTra2/app/src/main/res/drawable-mdpi/ic_baseline_remove_red_eye_24.xml" value="0.171" />
         <entry key="..\:/BaiKiemTra2/app/src/main/res/drawable-v24/ic_person.xml" value="0.141" />
         <entry key="..\:/BaiKiemTra2/app/src/main/res/drawable-v24/round_bg.xml" value="0.141" />
         <entry key="..\:/BaiKiemTra2/app/src/main/res/drawable-v24/round_border.xml" value="0.141" />
         <entry key="..\:/BaiKiemTra2/app/src/main/res/drawable-v24/wave.xml" value="0.141" />
+        <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/activity_add.xml" value="0.1838768115942029" />
+        <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/activity_fish_chi_tiet.xml" value="0.1802536231884058" />
+        <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/activity_list_fish.xml" value="0.11955420466058764" />
         <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/activity_mo_ta_ca_si.xml" value="0.21014492753623187" />
-        <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/activity_mo_ta_chi_tiet.xml" value="0.25" />
+        <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/activity_mo_ta_chi_tiet.xml" value="0.1" />
         <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/activity_rigest.xml" value="0.25" />
         <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/activity_sing_in.xml" value="0.25" />
         <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/activity_singup.xml" value="0.25" />
+        <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/item_fish.xml" value="0.1802536231884058" />
         <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/main_item.xml" value="0.25" />
-        <entry key="..\:/Users/TechCare/Desktop/Android/BaiKiemTra2/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/TechCare/Desktop/Android/BaiKiemTra2/app/src/main/res/layout/activity_mo_ta_chi_tiet.xml" value="0.25" />
-        <entry key="..\:/Users/TechCare/Desktop/Android/BaiKiemTra2/app/src/main/res/layout/activity_rigest.xml" value="0.25" />
-        <entry key="..\:/Users/TechCare/Desktop/Android/BaiKiemTra2/app/src/main/res/layout/activity_sing_in.xml" value="0.25" />
-        <entry key="..\:/Users/TechCare/Desktop/Android/BaiKiemTra2/app/src/main/res/layout/main_item.xml" value="0.25" />
+        <entry key="..\:/BaiKiemTra2/app/src/main/res/layout/updatefish.xml" value="0.11955420466058764" />
+        <entry key="..\:/BaiKiemTra2/app/src/main/res/menu/my_menu.xml" value="0.24583333333333332" />
       </map>
     </option>
   </component>

@@ -1,7 +1,7 @@
 package com.google.baikiemtra2;
 
+
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -19,61 +19,46 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class SingInActivity extends AppCompatActivity {
 
-    private EditText emailedit, passedit;
-    private Button btnlogin , btnregis ;
-    private FirebaseAuth mAuth;
     @Override
-    protected void onCreate(@Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mAuth = FirebaseAuth.getInstance();
-
-        emailedit = findViewById(R.id.inputEmail);
-        passedit = findViewById(R.id.inputPassword);
-        btnlogin = findViewById(R.id.login);
-        btnregis = findViewById(R.id.gotoRegister);
-
-        btnlogin.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_sing_in);
+        Button signIn = (Button) findViewById(R.id.btnSignIn);
+        TextView textView = (TextView) findViewById(R.id.btnSignIn_SignUp);
+        textView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
+                Intent intent = new Intent(SingInActivity.this , RigestActivity.class);
+                startActivity(intent);
+            }
+        });
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 login();
             }
         });
-        btnregis.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                register();
-            }
-        });
     }
-
-    private void register() {
-        Intent intent = new Intent(SingInActivity.this,RigestActivity.class);
-        startActivity(intent);
-    }
-
-    private void login(){
-        String email , pass ;
-        email =  emailedit.getText().toString();
-        pass  = passedit.getText().toString();
-
-        if(TextUtils.isEmpty(email)){
-            Toast.makeText(this,"Vui lòng nhập email!!!",Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if(TextUtils.isEmpty(pass)){
-            Toast.makeText(this,"Vui lòng nhập password!!!",Toast.LENGTH_SHORT).show();
-            return;
-        }
-        mAuth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+    private void   login(){
+        String taiKhoan , pass;
+        TextView textView1 = (TextView) findViewById(R.id.edtUserName);
+        TextView textView2 =  (TextView)  findViewById(R.id.edtPassword);
+        taiKhoan = textView1.getText().toString();
+        pass = textView2.getText().toString();
+//        if (TextUtils.isEmpty(taiKhoan) || TextUtils.isEmpty(pass)){
+//            Toast.makeText( Login.this,"Tài khoản hoặc mật khẩu không được để trống" , Toast.LENGTH_SHORT).show();
+//        }
+        FirebaseAuth  authException = FirebaseAuth.getInstance();
+        authException.signInWithEmailAndPassword(taiKhoan,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    Toast.makeText(getApplicationContext(),"Đăng nhập thành công!",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(SingInActivity.this,MainActivity.class);
+
+                if (task.isSuccessful()){
+                    Toast.makeText( SingInActivity.this,"Đăng nhập thành công" , Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(SingInActivity.this , List_fish.class);
                     startActivity(intent);
-                }else {
-                    Toast.makeText(getApplicationContext(),"Đăng nhập không thành công!",Toast.LENGTH_SHORT).show();
+                } else{
+                    Toast.makeText( SingInActivity.this,"Tài khoản hoặc mật khẩu không đúng" , Toast.LENGTH_SHORT).show();
                 }
             }
         });
