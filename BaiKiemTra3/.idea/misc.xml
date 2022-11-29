@@ -7,9 +7,12 @@
         <entry key="..\:/BaiKiemTra3/app/src/main/res/drawable-v24/ic_wave.xml" value="0.1755" />
         <entry key="..\:/BaiKiemTra3/app/src/main/res/drawable-v24/round_bg.xml" value="0.1755" />
         <entry key="..\:/BaiKiemTra3/app/src/main/res/drawable-v24/round_border.xml" value="0.1755" />
-        <entry key="..\:/BaiKiemTra3/app/src/main/res/layout/activity_detail.xml" value="0.18070652173913043" />
+        <entry key="..\:/BaiKiemTra3/app/src/main/res/drawable/bg_indicator.xml" value="0.127" />
+        <entry key="..\:/BaiKiemTra3/app/src/main/res/layout/activity_detail.xml" value="0.1" />
         <entry key="..\:/BaiKiemTra3/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/BaiKiemTra3/app/src/main/res/layout/item_ngon_ngu.xml" value="0.16" />
         <entry key="..\:/BaiKiemTra3/app/src/main/res/layout/item_phep_tinh.xml" value="0.16" />
+        <entry key="..\:/BaiKiemTra3/app/src/main/res/layout/item_photo.xml" value="0.20742753623188406" />
       </map>
     </option>
   </component>
@@ -18,12 +21,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.16" />
-      </ProjectState>
-    </option>
   </component>
 </project>

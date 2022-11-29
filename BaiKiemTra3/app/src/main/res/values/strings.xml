@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">BaiKiemTra3</string>
+
+    <string-array name="textviewTen">
+        <item>VIỆT NAM</item>
+        <item>PHÁP</item>
+        <item>NGA</item>
+        <item>ANH</item>
+        <item>MỸ</item>
+        <item>TRUNG QUỐC</item>
+        <item>ARGENTINA</item>
+    </string-array>
 </resources>
